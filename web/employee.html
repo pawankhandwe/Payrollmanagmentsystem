@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <title>ADD EMPLOYEE 
+   </title>
+
+ <style>
+     .button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 2px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 10px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 150px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+      * {
+        margin: 10px;
+        padding: 0;
+        list-style-type: none;
+        box-sizing: border-box;
+      }
+      body {
+        /*background: url('https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80') center;*/
+        background-size: cover;
+        min-height: 600px;
+        font-family: 'Helvetica Neue', sans-serif;
+      }
+      nav {
+        text-align: center;
+      }
+      .menu {
+        display: inline-block;
+      }
+      .menu>li {
+        float: left;
+        color: #e298e1;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        background: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        font-size: 17px;
+      }
+      .sub-menu {
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+      .sub-menu li {
+        font-size: 10px;
+        font-weight:bold;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 3x 2x;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+      .sub-menu li:last-child {
+        border-bottom: 0;
+      }
+      .sub-menu li:hover {
+        background: black;
+      }
+      .menu>li:hover .sub-menu li {
+        transform: scale(1);
+      }
+      .menu>li:hover .sub-menu {
+        transform: scale(1);
+      }
+    </style>
+  
+  </head>
+  <body>
+      
+    <nav>
+      <ul class="menu">
+        <li>
+            <a href="home1.jsp" style="color:lightpink" class="active">HOME</a>
+        </li>
+        
+        <li>
+           <a  style="color: pink" >ADMINISTRATION</a>
+          <ul class="sub-menu">        
+         <li>   <a href="admin.html" style="color: pink">ADD NEW ADMIN USER</a></li>
+        <li><a href="employee.html" style="color: pink">ADD NEW EMPLOYEE</a></li>
+       <li> <a href="addemployeesalary.html" style="color: pink">ADD EMPLOYEE SALARY</a></li>
+       <li> <a href="adddesignation.html" style="color: pink">ADD DESIGNATION REPORT</a></li>
+       <li> <a href="addemployedpt.html" style="color: pink">ADD DEPARTMENT REPORT</a></li>
+          </ul>
+        </li>
+        <li>
+           <a  style="color: pink">REPORTS</a>
+          <ul class="sub-menu">
+            <li><a href="AdminUserReports.jsp" style="color: pink">ADMIN USERS</a></li>
+            <li><a href="EmployeeUserReports.jsp" style="color: pink">EMPLOYEES DETAILS</a></li>
+            <li><a href="SalaryReports.jsp" style="color: pink">EMPLOYEE SALARY</a></li>
+            <li><a href="DesignationReports.jsp" style="color: pink">DESIGNATION REPORT</a></li>
+            <li><a href="DepartmentReports.jsp" style="color: pink">DEPARTMENT REPORT</a></li>
+     
+                
+          </ul>
+        </li>
+        
+        <li>
+          <a href="MyAccount.html" style="color: pink">MY ACCOUNT</a>
+        </li>
+        <li>
+           <a href="changepassword.html" style="color: pink">CHANGEPASSWORD</a>
+   
+        </li>
+        <li>
+           <a href="login.html" style="color: pink">LOGOUT</a>
+   
+        </li>
+        
+      </ul>
+    </nav>
+
+
+  <center>
+    <br><br>
+    
+    
+    <h1>EMPLOYEE REGISTRATION FORM</h1>
+   <br><br>
+    <form action="NewServlet3" method="post">
+    NAME:
+    </form>
+    <input type="text" name="name" placeholder="NAME"/><br><br>
+    USER ROLE :
+    <form action="">
+        <select name="userrole" id="role">
+            <option value="admin">Choose a role:</option> 
+          <option value="admin">Normal User</option>
+         </select>
+         <br><br>
+      </form>
+
+
+
+    USERNAME:
+    <input type="text" name="username" placeholder="USERNAME"/><br><br>
+   PASSWORD:
+    <input type="password" name="password" placeholder="PASSWORD"/><br><br>
+    CONFIRM PASSWORD:
+    <input type="password" name="confirm password" placeholder="CONFIRM PASSWORD"/><br><br>
+    MOBILE:
+    <input type="text" name="mobile" placeholder="MOBILE"/><br><br>
+    EMAIL:
+    <input type="text" name="email" placeholder="EMAIL"/><br><br>
+    DATE OF BIRTH:
+    <input type="date" name="dob" placeholder="DATE OF BIRTH"/><br><br>
+    ADDRESS LINE 1:
+    <input type="text" name="address line 1" placeholder="ADDRESS LINE 1"/><br><br>
+    ADDRESS LINE 2:
+    <input type="text" name="address 2" placeholder="ADDRESS LINE 2"/><br><br>
+    CITY :
+    <form action="">
+        <select name="CITY" id="CITY">
+            <option value="admin">Choose a CITY:</option> 
+          <option value="admin">BHOPAL</option>
+          <option value="admin">MUMBAI</option>
+          <option value="admin">NAGPUR</option>
+          <option value="admin">INDORE</option>
+          <option value="admin">JABALPUR</option>
+          <option value="admin">PUNE</option>
+         </select>
+         <br><br>
+      </form>
+      STATE :
+      <form action="">
+          <select name="STATE" id="STATE">
+              <option value="admin">Choose a STATE:</option> 
+            <option value="admin">MADHYA PRADESH</option>
+            <option value="admin">MAHARASTRA</option>
+           </select>
+           <br><br>
+        </form>
+        COUNTRY :
+        <form action="">
+            <select name="COUNTRY" id="COUNTRY">
+                <option value="admin">Choose a COUNTRY:</option> 
+              <option value="admin">INDIA</option>
+             </select>
+             <br><br>
+          </form>
+
+          <form action="">
+            <label for="myfile">Photo:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+           
+          </form>
+<form action="">
+<!--          <button class="button">SUBMIT</button>
+          <button class="button">RESET</button>-->
+                <button class="button-64" role="button"><span class="text">SUBMIT</span></button>
+ <button class="button-64" role="button"><span class="text">RESET</span></button>
+
+    </form>
+</center>
+  
+  
+  
+  
+  
+  </body>
+  </html>
+
+
+

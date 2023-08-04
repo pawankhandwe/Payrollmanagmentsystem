@@ -1,0 +1,413 @@
+<html>
+<title>ABOUT
+   </title>
+<style>
+    html {
+  height: 100%;
+}
+
+h1
+{
+    margin-top: 40px;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.button{
+    
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 12px;
+margin-right: 10px;
+
+}
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+.logo {
+  position: relative;
+  margin-left: 40px;
+  padding: 10px;
+}
+.logo img {
+  height: 100px;
+  width: 120px;
+  border-image: stretch;
+  border-radius: 50%;
+  background-color: transparent;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10% 0 10%;
+  font-size: larger;
+  margin-left: 20px;
+}
+.nav-list {
+  display: flex;
+  margin-left: 10%;
+}
+.navbar {
+  position: absolute;
+}
+nav ul li {
+  height: fit-content;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px 0 30px;
+  margin:   20px 30px;
+  margin-top: -20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+nav ul li a:hover {
+  color: rgb(12, 218, 33);
+  transition: 0.2s ease;
+  cursor: pointer;
+  border-style: outset;
+  border-radius: 35%;
+  box-shadow: 30px 40px 50px 0px #27829e, -20px -20px 50px hsl(120, 14%, 89%);
+}
+.divimage
+{
+    padding: 50px 60px;
+  width: 50%;
+    font-size: 2px;
+   display:flex;
+}
+.image
+{
+    padding: 50px 60px;
+  width: 50%;
+    font-size: 2px;
+    display:flex;
+    align-items: flex;
+    align-content: flex;
+    
+}
+h1
+{
+/*    margin-top: 0px;*/
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10% 0 10%;
+  font-size: larger;
+  margin-left: 20px;
+}
+.nav-list {
+  display: flex;
+  margin-left: 10%;
+}
+.navbar {
+  position: absolute;
+}
+nav ul li {
+  height: fit-content;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px 0 30px;
+  margin:   20px 30px;
+  margin-top: -20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+nav ul li a:hover {
+  color: rgb(12, 218, 33);
+  transition: 0.2s ease;
+  cursor: pointer;
+  border-style: outset;
+  border-radius: 35%;
+  box-shadow: 30px 40px 50px 0px #27829e, -20px -20px 50px hsl(120, 14%, 89%);
+}
+h1 {
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #2c4bff; /* the color */
+  
+  color: #0000;
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+h1:hover {--_p: 100%}
+
+
+
+h1 {
+  font-family: system-ui, sans-serif;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+</style>
+<body>
+     <nav class="navbar">
+  <ul class="nav-list">
+      <li><a  href="home.html">HOME</a></li>
+      <li><a  href="about.html">ABOUT</a></li>
+      <li><a  href="login.html">LOGIN</a></li>
+      <li><a  href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+    
+  
+    <div class="divimage">
+            <img class="image" src="https://officeanywhere.io/images/payroll/help/001/online-payroll-employee-details-1.png">
+    
+
+        <img class="image" src="https://i1.wp.com/solarsys.sg/wp-content/uploads/2014/07/5-report.png?resize=500%2C257&ssl=1">    
+      
+        <img class="image" src="https://i.pinimg.com/originals/c0/c2/42/c0c2420a0b1ead9d1530dfbd8be61f31.jpg">  
+ 
+    </div>
+    
+    <h1 style="color:wheat"> 1. Set the Process Up</h1>  
+    <p style="color: white">
+If you are running payroll manually, the process will be important to ensure that you don’t overlook any critical detail when processing payroll. When setting up the process, determine a pay schedule that you will stick to. Typical pay schedules are weekly, biweekly or semimonthly.
+Have a process for tracking work time. This can be manual or digital. You may have a time clock or use a computer program to log time. Whatever you choose, train your employees on tracking their work time properly to get paid correctly.
+
+Establish any benefits programs that you will offer employees, such as retirement plans or health insurance. Figure out how much you will pay and how much employees will pay. You’ll need to account for these deductions when processing payroll and send money to the correct benefits program.
+
+One of the most critical parts of the process is taxes. Find out when you need to pay taxes to state and federal entities. You’ll need to withhold tax amounts and forward the totals at the appropriate time.
+
+    </p>
+    <h1 style="color:wheat">
+2. Review and Approve Time Sheets </h1>  
+    <p style="color: white">
+Employees can be paid based on a salary or hourly based on a time sheet. Salaried employees will get the same payment each pay period and generally don’t need to track hours. Hourly employees must provide an accurate time sheet to get paid. Review time sheets and compare them to employee schedules, checking for errors.
+
+Record any sick time or vacation time. If you are giving employees paid time off (PTO), you’ll want to track this as you process payroll. Most employers don’t count lunch breaks in the total hours worked. Record the tally of hours worked on a spreadsheet, noting any PTO that should be paid as well. Also, record overtime hours which will get paid at a higher rate.
+
+    </p>
+ <h1 style="color:wheat">
+     3. Calculate Gross Pay
+</h1>  
+    <p style="color: white">
+Before you can think about deductions, you need to calculate gross pay. For those on a salary, the gross pay is their salary amount. Those on hourly schedules must have gross pay calculated. Multiply the number of hours worked by the hourly wage you pay them.
+
+You will also want to calculate overtime wages. These are wages paid for hours worked above the 40-hour work week. Overtime is generally paid at 1.5 times the hourly rate. Notate on the spreadsheet the total gross wages and overtime wages earned for each employee.
+
+    </p><h1 style="color:wheat">
+    
+4. Calculate and Withhold Income Taxes
+</h1>  
+    <p style="color: white">
+You’ll need to withhold federal and state taxes for each employee based on their allowances. Use the IRS Withholding Estimator to determine how much in federal taxes you must withhold for each employee. Check with your state tax assessor’s office to determine the right amount to withhold for state taxes. Taxes are usually paid monthly, so collect them, set them aside and make payments as required.
+
+5. Determine Other Deductions
+Other items must come out of the gross pay through a deduction plan. These deductions include, but aren’t limited to:
+
+Social Security taxes
+Medicare
+Federal unemployment tax
+401(k) contributions
+Health benefits
+Note that the current percentages for Social Security is 6.2% for the employer and 6.2% for the employee. The Medicare rate is 1.45% for the employer and 1.45% for the employee. Make sure you set aside the right amount from the employee’s gross wages and from your own business account to pay these required taxes.
+
+For all other deductions, determine how much needs to be pulled from the gross wages and where it needs to be sent, such as health insurance provider. Always factor in what you pay as an employer as a separate line item than what comes out of the employee’s gross pay. Keep track of all withholdings on your spreadsheet.
+
+6. Pay Employees
+Now is the time to start cutting checks or making direct deposits. Deduct all the tax withholdings and deductions from the gross pay. This leaves you with the net pay, which is the amount that the check should be written for.
+
+Employees expect a pay stub that lists the gross pay and itemizes all deductions. Pay stubs include the business name and address, the employee’s name, address, Social Security number, gross income, withholding amounts, deductions and net pay. There are some online services that will help you generate professional pay stubs for your payroll.
+
+7. Do Year-end Payroll Tax Reports
+Employees must be sent a Form W-2 by January 31 of the year following their paid wages. This form lists the employer’s information, the employee’s information and tallies total earnings, taxes and deductions made in the year.
+
+8. Store Payroll Records
+The IRS says to store payroll records for at least four years from the date when the taxes are due or from the date that you made the payment―whichever is later. This means that you need to keep time cards, spreadsheets and copies of checks and deposits for this period of time should an audit or a discrepancy arise.
+
+Payroll Processing Costs & Fees
+If you do payroll manually, there are no additional fees to the process. However, if you choose a payroll processing service to simplify the process, there will be fees associated with the service. Each payroll processor starts with a monthly fee paid for the account as a whole. This is often between $20 and $100 per month. Then, there is a processing fee for each employee for each pay period. This may be up to $10 per employee per pay period.
+
+Employers may find the fees well worth it. Service providers do all the calculations, pay the appropriate tax bodies and benefits providers and handle the checks or direct deposits for employers. This takes the task of processing payroll from hours to minutes for busy employers.
+
+Best Payroll Services
+Some businesses may decide that manually processing everything related to payroll is simply not worth their time, and choose to outsource it. When choosing a payroll services provider, consider the size of your business and the costs associated with the provider. Some providers have a sliding fee scale that helps keep costs down for larger employers. Consider the types of employees you have and whether or not the provider can handle those types of payments on the schedule you have established. Look for a payroll service provider that will handle the tax filing and payments on your behalf and keep the records on file on your behalf for the mandated time.
+
+Bottom Line
+Payroll is an essential aspect of running a business. It takes attention to details with requirements that you can’t make mistakes on. While it is possible to process payroll manually, you are likely better off paying a small fee to have a payroll provider do all the work for you.
+    </p>
+
+</body>
+</html>

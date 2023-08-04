@@ -1,0 +1,225 @@
+<html>
+<title>MY ACCOUNT
+   </title>
+<style>
+ 
+         h1 {
+  --s: 0.1em;   /* the thickness of the line */
+  --c:#9ACD32; /* the color */
+  
+  color: #0000;
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+h1:hover {--_p: 100%}
+
+
+
+h1 {
+  font-family:cursive;
+  color:white;
+  background-clip:inherit;
+  font-size: 3rem;
+  cursor: pointer;
+}
+      * {
+        margin: 10px;
+        padding: 0;
+        list-style-type: none;
+        box-sizing: border-box;
+      }
+      body {
+        /*background: url('https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80') center;*/
+     background: url('https://thumbs.dreamstime.com/z/payroll-business-finance-concept-virtual-screen-payroll-business-finance-concept-virtual-screen-159813801.jpg?w=992');
+     
+     background-size: cover;
+        min-height: 600px;
+        font-family: 'Helvetica Neue', sans-serif;
+      }
+      nav {
+        text-align: center;
+      }
+      .menu {
+        display: inline-block;
+      }
+      .menu>li {
+        float: left;
+        color: #e298e1;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        background: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        font-size: 17px;
+      }
+      .sub-menu {
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+      .sub-menu li {
+        font-size: 10px;
+        font-weight:bold;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 3x 2x;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+      .sub-menu li:last-child {
+        border-bottom: 0;
+      }
+      .sub-menu li:hover {
+        background: black;
+      }
+      .menu>li:hover .sub-menu li {
+        transform: scale(1);
+      }
+      .menu>li:hover .sub-menu {
+        transform: scale(1);
+      }
+      
+      .divimage
+      {
+          display:flex;
+          
+      }
+      .image
+      {
+         width: 500px;
+      }
+
+</style>
+<body>
+     <nav>
+      <ul class="menu">
+        <li>
+            <a href="home1.jsp" style="color:lightpink" class="active">HOME</a>
+        </li>
+        
+        <li>
+           <a  style="color: pink" >ADMINISTRATION</a>
+          <ul class="sub-menu">        
+         <li>   <a href="admin.html" style="color: pink">ADD NEW ADMIN USER</a></li>
+        <li><a href="employee.html" style="color: pink">ADD NEW EMPLOYEE</a></li>
+       <li> <a href="addemployeesalary.html" style="color: pink">ADD EMPLOYEE SALARY</a></li>
+       <li> <a href="adddesignation.html" style="color: pink">ADD DESIGNATION REPORT</a></li>
+       <li> <a href="addemployedpt.html" style="color: pink">ADD DEPARTMENT REPORT</a></li>
+          </ul>
+        </li>
+        <li>
+           <a  style="color: pink">REPORTS</a>
+          <ul class="sub-menu">
+            <li><a href="AdminUserReports.jsp" style="color: pink">ADMIN USERS</a></li>
+            <li><a href="EmployeeUserReports.jsp" style="color: pink">EMPLOYEES DETAILS</a></li>
+            <li><a href="SalaryReports.jsp" style="color: pink">EMPLOYEE SALARY</a></li>
+            <li><a href="DesignationReports.jsp" style="color: pink">DESIGNATION REPORT</a></li>
+            <li><a href="DepartmentReports.jsp" style="color: pink">DEPARTMENT REPORT</a></li>
+     
+                
+          </ul>
+        </li>
+        
+        <li>
+          <a href="MyAccount.html" style="color: pink">MY ACCOUNT</a>
+        </li>
+        <li>
+           <a href="changepassword.html" style="color: pink">CHANGEPASSWORD</a>
+   
+        </li>
+        <li>
+           <a href="login.html" style="color: pink">LOGOUT</a>
+   
+        </li>
+        
+      </ul>
+    </nav>
+    
+  
+    <div class="divimage">
+            <img class="image" src="https://officeanywhere.io/images/payroll/help/001/online-payroll-employee-details-1.png">
+    
+
+        <img class="image" src="https://i1.wp.com/solarsys.sg/wp-content/uploads/2014/07/5-report.png?resize=500%2C257&ssl=1">    
+      
+        <img class="image" src="https://i.pinimg.com/originals/c0/c2/42/c0c2420a0b1ead9d1530dfbd8be61f31.jpg">  
+ 
+    </div>
+    
+    <h1 style="color:wheat"> 1. Set the Process Up</h1>  
+    <p style="color: white">
+If you are running payroll manually, the process will be important to ensure that you don’t overlook any critical detail when processing payroll. When setting up the process, determine a pay schedule that you will stick to. Typical pay schedules are weekly, biweekly or semimonthly.
+Have a process for tracking work time. This can be manual or digital. You may have a time clock or use a computer program to log time. Whatever you choose, train your employees on tracking their work time properly to get paid correctly.
+
+Establish any benefits programs that you will offer employees, such as retirement plans or health insurance. Figure out how much you will pay and how much employees will pay. You’ll need to account for these deductions when processing payroll and send money to the correct benefits program.
+
+One of the most critical parts of the process is taxes. Find out when you need to pay taxes to state and federal entities. You’ll need to withhold tax amounts and forward the totals at the appropriate time.
+
+    </p>
+    <h1 style="color:wheat">
+2. Review and Approve Time Sheets </h1>  
+    <p style="color: white">
+Employees can be paid based on a salary or hourly based on a time sheet. Salaried employees will get the same payment each pay period and generally don’t need to track hours. Hourly employees must provide an accurate time sheet to get paid. Review time sheets and compare them to employee schedules, checking for errors.
+
+Record any sick time or vacation time. If you are giving employees paid time off (PTO), you’ll want to track this as you process payroll. Most employers don’t count lunch breaks in the total hours worked. Record the tally of hours worked on a spreadsheet, noting any PTO that should be paid as well. Also, record overtime hours which will get paid at a higher rate.
+
+    </p>
+ <h1 style="color:wheat">
+     3. Calculate Gross Pay
+</h1>  
+    <p style="color: white">
+Before you can think about deductions, you need to calculate gross pay. For those on a salary, the gross pay is their salary amount. Those on hourly schedules must have gross pay calculated. Multiply the number of hours worked by the hourly wage you pay them.
+
+You will also want to calculate overtime wages. These are wages paid for hours worked above the 40-hour work week. Overtime is generally paid at 1.5 times the hourly rate. Notate on the spreadsheet the total gross wages and overtime wages earned for each employee.
+
+    </p><h1 style="color:wheat">
+    
+4. Calculate and Withhold Income Taxes
+</h1>  
+    <p style="color: white">
+You’ll need to withhold federal and state taxes for each employee based on their allowances. Use the IRS Withholding Estimator to determine how much in federal taxes you must withhold for each employee. Check with your state tax assessor’s office to determine the right amount to withhold for state taxes. Taxes are usually paid monthly, so collect them, set them aside and make payments as required.
+
+5. Determine Other Deductions
+Other items must come out of the gross pay through a deduction plan. These deductions include, but aren’t limited to:
+
+Social Security taxes
+Medicare
+Federal unemployment tax
+401(k) contributions
+Health benefits
+Note that the current percentages for Social Security is 6.2% for the employer and 6.2% for the employee. The Medicare rate is 1.45% for the employer and 1.45% for the employee. Make sure you set aside the right amount from the employee’s gross wages and from your own business account to pay these required taxes.
+
+For all other deductions, determine how much needs to be pulled from the gross wages and where it needs to be sent, such as health insurance provider. Always factor in what you pay as an employer as a separate line item than what comes out of the employee’s gross pay. Keep track of all withholdings on your spreadsheet.
+
+6. Pay Employees
+Now is the time to start cutting checks or making direct deposits. Deduct all the tax withholdings and deductions from the gross pay. This leaves you with the net pay, which is the amount that the check should be written for.
+
+Employees expect a pay stub that lists the gross pay and itemizes all deductions. Pay stubs include the business name and address, the employee’s name, address, Social Security number, gross income, withholding amounts, deductions and net pay. There are some online services that will help you generate professional pay stubs for your payroll.
+
+7. Do Year-end Payroll Tax Reports
+Employees must be sent a Form W-2 by January 31 of the year following their paid wages. This form lists the employer’s information, the employee’s information and tallies total earnings, taxes and deductions made in the year.
+
+8. Store Payroll Records
+The IRS says to store payroll records for at least four years from the date when the taxes are due or from the date that you made the payment―whichever is later. This means that you need to keep time cards, spreadsheets and copies of checks and deposits for this period of time should an audit or a discrepancy arise.
+
+Payroll Processing Costs & Fees
+If you do payroll manually, there are no additional fees to the process. However, if you choose a payroll processing service to simplify the process, there will be fees associated with the service. Each payroll processor starts with a monthly fee paid for the account as a whole. This is often between $20 and $100 per month. Then, there is a processing fee for each employee for each pay period. This may be up to $10 per employee per pay period.
+
+Employers may find the fees well worth it. Service providers do all the calculations, pay the appropriate tax bodies and benefits providers and handle the checks or direct deposits for employers. This takes the task of processing payroll from hours to minutes for busy employers.
+
+Best Payroll Services
+Some businesses may decide that manually processing everything related to payroll is simply not worth their time, and choose to outsource it. When choosing a payroll services provider, consider the size of your business and the costs associated with the provider. Some providers have a sliding fee scale that helps keep costs down for larger employers. Consider the types of employees you have and whether or not the provider can handle those types of payments on the schedule you have established. Look for a payroll service provider that will handle the tax filing and payments on your behalf and keep the records on file on your behalf for the mandated time.
+
+Bottom Line
+Payroll is an essential aspect of running a business. It takes attention to details with requirements that you can’t make mistakes on. While it is possible to process payroll manually, you are likely better off paying a small fee to have a payroll provider do all the work for you.
+    </p>
+
+</body>
+</html>
