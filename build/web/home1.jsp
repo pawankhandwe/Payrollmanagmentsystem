@@ -42,7 +42,7 @@ h1 {
   cursor: pointer;
 }
       * {
-        margin: 10px;
+        margin-right:5px;
         padding: 0;
         list-style-type: none;
         box-sizing: border-box;
@@ -80,7 +80,7 @@ h1 {
         font-size: 10px;
         font-weight:bold;
         background: rgba(0, 0, 0, 0.8);
-        padding: 3x 2x;
+        padding: 3x 2px;
         color: white;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         transform: scale(0);

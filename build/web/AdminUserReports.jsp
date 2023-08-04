@@ -147,7 +147,7 @@ h2{
     }
 }
       * {
-        margin: 10px;
+         margin-right:5px;
         padding: 0;
         list-style-type: none;
         box-sizing: border-box;
